@@ -46,7 +46,7 @@ public class EmployeeController {
     @PutMapping("/{id}")
     public Employee updateEmployee(@PathVariable int id, @RequestBody Employee employeeDetails){
         Employee updatedEmployee = employeeService.updateEmployee(id,employeeDetails);
-        String msg = "Employee With the Id " + id + " is Updated!";
+//        String msg = "Employee With the Id " + id + " is Updated!";
         return updatedEmployee;
     }
     @DeleteMapping("/{id}")
